@@ -1,0 +1,29 @@
+{
+  "name": "trello-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "framer-motion": "^11.2.10",
+    "git": "^0.1.5",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-dom": "^18",
+    "react-router-dom": "^6.23.1",
+    "sass": "^1.77.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
