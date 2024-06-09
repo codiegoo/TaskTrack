@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-# TaskTrack
-Aplicacion web tipo trello para la gestion de proyectos en tableros orientado a la tecnologia tipo canvan.
 =======
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
