@@ -26,34 +26,34 @@ nav
         padding: 0
         font-size: 1.6rem
         font-weight: bold
-    ul
+  ul
+    display: flex
+    flex-direction: row
+    gap: 2rem
+    li
+      list-style: none
       display: flex
-      flex-direction: row
-      gap: 2rem
-      li
-        list-style: none
-        display: flex
-        align-items: center
-        gap: .2rem
-        position: relative
-        padding: 0rem 0.5rem
-        border: 2px solid #2d2b34
-      li:hover
-        cursor: pointer
-        border: 2px solid #5c54fb
-        border-radius: 0.2rem
-      button
-        display: flex
-        border: none
-        padding: 0.1rem 1.5rem
-        background: #5c54fb
-        font-size: 1rem
-        border: 2px solid #5c54fb
-        border-radius: .3rem
-      button:hover
-        cursor: pointer
-        background: #2d2b34
-        color: #cecce6
+      align-items: center
+      gap: .2rem
+      position: relative
+      padding: 0rem 0.5rem
+      border: 2px solid #2d2b34
+    li:hover
+      cursor: pointer
+      border: 2px solid #5c54fb
+      border-radius: 0.2rem
+    .createBoardButton
+      display: flex
+      border: none
+      padding: 0.1rem 1.5rem
+      background: #5c54fb
+      font-size: 1rem
+      border: 2px solid #5c54fb
+      border-radius: .3rem
+    .createBoardButton:hover
+      cursor: pointer
+      background: #2d2b34
+      color: #cecce6
   .accountContain
     width: 20%
     display: flex

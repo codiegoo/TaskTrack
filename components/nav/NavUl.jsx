@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import WorkSpacesList from '../workSpacesList/WorkSpacesList';
 import RecentBoardsList from '../recentBoardsList/RecentBoardsList';
 import FavoritesList from '../favoritesList/FavoritesList';
-import BottomCreateList from '../bottomCreateList/BottomCreateList';
 import { CaretDownFill } from 'react-bootstrap-icons';
+import CreateBoard from '../createBoard/CreateBoard';
 
 export default function NavUl() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -35,20 +35,23 @@ export default function NavUl() {
     <ul ref={navRef}>
       <li onClick={() => handleItemClick('Espacios de trabajo')}>
         Espacios de trabajo <CaretDownFill />
-        {selectedItem === 'Espacios de trabajo' && <WorkSpacesList />}
       </li>
+      {selectedItem === 'Espacios de trabajo' && <WorkSpacesList />}
+      
       <li onClick={() => handleItemClick('Recientes')}>
         Recientes <CaretDownFill />
-        {selectedItem === 'Recientes' && <RecentBoardsList />}
       </li>
+      {selectedItem === 'Recientes' && <RecentBoardsList />}
+      
       <li onClick={() => handleItemClick('Favoritos')}>
         Favoritos <CaretDownFill />
-        {selectedItem === 'Favoritos' && <FavoritesList />}
       </li>
-      <button onClick={() => handleItemClick('Crear')}>
+      {selectedItem === 'Favoritos' && <FavoritesList />}
+      
+      <button className='createBoardButton' onClick={() => handleItemClick('Crear')}>
         Crear
-        {selectedItem === 'Crear' && <BottomCreateList />}
       </button>
+      {selectedItem === 'Crear' && <CreateBoard />}
     </ul>
   );
 }
